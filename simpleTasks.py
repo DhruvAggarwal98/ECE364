@@ -143,71 +143,69 @@ def convertToInteger(boolList):
 
 # This  block  is  optional
 if __name__  == "__main__":
-
-
-# Write  anything  here to test  your  code.
-# #Test for Function 1
-#     print("FUNCTION 1 ********************TEST****\n")
+    
+#    Test for Function 1
+     print("FUNCTION 1 ********************TEST****\n")
      test1 = find('1XXX9')
-#     print(test1)
-#     print("***************************************\n")
-#
-# #Test for Function 2
-#     print("FUNCTION 2 ********************TEST****\n")
+     print(test1)
+     print("***************************************\n")
+
+#    Test for Function 2
+     print("FUNCTION 2 ********************TEST****\n")
      sequence = "54789654321687984"
      test1 = getStreakProduct(sequence,5,288)
-#     test2 = getStreakProduct(sequence,3,140)
-#     test3 = getStreakProduct(sequence,9,10)
-#     print(test1)
-#     print(test2)
-#     print(test3)
-#     print("***************************************\n")
-#
-# #Test for Function 3
-#     print("FUNCTION 3 ********************TEST****\n")
+     test2 = getStreakProduct(sequence,3,140)
+     test3 = getStreakProduct(sequence,9,10)
+     print(test1)
+     print(test2)
+     print(test3)
+     print("***************************************\n")
+
+#    Test for Function 3
+     print("FUNCTION 3 ********************TEST****\n")
      writePyramids('test1.txt',13, 6,'X')
-#     print("***************************************\n")
-#
-# #Test for Function 4
-#     print("FUNCTION 4 ********************TEST****\n")
+     print("***************************************\n")
+     
+#    Test for Function 4
+     print("FUNCTION 4 ********************TEST****\n")
      sequence = "AAASSSSSSAPPPSSPPBBCCCSSS"
      test1 = getStreaks(sequence,"SAQT")
-#     test2 = getStreaks(sequence,"PAZ")
-#     test3 = getStreaks(sequence,"GL@")
-#     test4 = getStreaks(sequence,"X")
-#     print(test1)
-#     print(test2)
-#     print(test3)
-#     print(test4)
-#
-#     print("***************************************\n")
-# #Test for Function 5
-#     print("FUNCTION 5 ********************TEST****\n")
+     test2 = getStreaks(sequence,"PAZ")
+     test3 = getStreaks(sequence,"GL@")
+     test4 = getStreaks(sequence,"X")
+     print(test1)
+     print(test2)
+     print(test3)
+     print(test4)
+     print("***************************************\n")
+     
+#    Test for Function 5
+     print("FUNCTION 5 ********************TEST****\n")
      names = ["George Smith", "Mark Johnson", "Cordell Theodore", "Maria Satterfield", "Johnson Cadence"]
      test1 = findNames(names,"F","Johnson")
-#     test2 = findNames(names, "L", "Johnson")
-#     test3 = findNames(names, "FL", "Johnson")
-#     test4 = findNames(names, "FL", "SMITh")
-#     print(format(test1))
-#     print(format(test2))
-#     print(format(test3))
-#     print(format(test4))
-#
-#     print("***************************************\n")
-#
-#     #Test for Function 6
-#     print("FUNCTION 6 ********************TEST****\n")
+     test2 = findNames(names, "L", "Johnson")
+     test3 = findNames(names, "FL", "Johnson")
+     test4 = findNames(names, "FL", "SMITh")
+     print(format(test1))
+     print(format(test2))
+     print(format(test3))
+     print(format(test4))
+     print("***************************************\n")
+     
+#    Test for Function 6
+     print("FUNCTION 6 ********************TEST****\n")
      test1 = convertToBoolean(135, 12)
-#     print(test1)
-#     test2 = convertToBoolean(9,3)
-#     print(test2)
-#     print("***************************************\n")
-#     #Test for Function 7
-#     print("FUNCTION 7 ********************TEST****\n")
-#     test1 = [True,False, False, False, False, True, True, True]
-#     test2 = [False, False, True, False, False, True]
-#     answer1 = convertToInteger(test1)
-#     answer2 = convertToInteger(test2)
-#     print(answer1)
-#     print(answer2)
-#     print("***************************************\n")
+     print(test1)
+     test2 = convertToBoolean(9,3)
+     print(test2)
+     print("***************************************\n")
+     
+#    Test for Function 7
+     print("FUNCTION 7 ********************TEST****\n")
+     test1 = [True,False, False, False, False, True, True, True]
+     test2 = [False, False, True, False, False, True]
+     answer1 = convertToInteger(test1)
+     answer2 = convertToInteger(test2)
+     print(answer1)
+     print(answer2)
+     print("***************************************\n")
