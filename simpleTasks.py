@@ -10,6 +10,7 @@ import sys     # Each  one on a line
 #######################################################
 DataPath = os.path.expanduser('/home/ecegridfs/a/ee364/DataFolder/Prelab01')
 
+#function reads the file sequence.txt given and  searches for the provided input pattern string throughout, and returns a list of all number sequences that match the given pattern.
 def find(pattern):
 
     file= os.path.join(DataPath, 'sequence.txt')
@@ -33,6 +34,7 @@ def find(pattern):
             newlist.append(new_sequence[j])
     return newlist
 
+#searches the string sequence for all sub-sequences, whose size is between 2 and maxSize, inclusively, and returns a list of all sequences whose digital product is equal to product.
 def getStreakProduct(sequence, maxSize, product):
     newlist = []
     new_sequence = []
@@ -49,6 +51,7 @@ def getStreakProduct(sequence, maxSize, product):
         result = 1
     return newlist
 
+# saves one or more pyramid-shaped sequence of characters in file, separated by a single space at the base.
 def writePyramids(filePath,baseSize, count, char):
     string = ""
     spaces = " "
@@ -68,6 +71,7 @@ def writePyramids(filePath,baseSize, count, char):
     with open(filePath, 'w') as myfile:
         myfile.writelines(newlist)
 
+#takes in a sequence, and checks to make sure there is a valid letter, and then prints out the streaks in order of their appearance in the sequence
 def getStreaks(sequence, letters):
     newlist = []
     string = ""
@@ -88,6 +92,7 @@ def getStreaks(sequence, letters):
             newlist.append(string)
     return newlist
 
+#searches nameList, depending on input and will return matching names
 def findNames(nameList, part, name):
     newlist = []
     for i in nameList:
@@ -105,6 +110,7 @@ def findNames(nameList, part, name):
             return newlist
     return newlist
 
+#converts decimal number into boolean ("True or Falses") depending on binary representation
 def convertToBoolean(num, size):
     newlist = []
     if isinstance(num,int) == False:
@@ -126,6 +132,7 @@ def convertToBoolean(num, size):
                 newlist.append(False)
         return newlist
 
+#converts a list of booleans ("True or Falses") to a decimal value
 def convertToInteger(boolList):
     if isinstance(boolList, list) == False:
         return None
