@@ -1,8 +1,5 @@
 #######################################################
 #    Author:      <Dhruv Aggarwal >
-#    email:       <aggarw45@purdue.edu>
-#    ID:           <ee364d01 >
-#    Date:         <1/10/19>
 #######################################################
 import os      # List of  module  import  statements
 import sys     # Each  one on a line
