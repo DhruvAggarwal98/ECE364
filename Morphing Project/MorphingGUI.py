@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MorphingGUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 607)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.LoadStart = QtWidgets.QPushButton(self.centralwidget)
+        self.LoadStart.setGeometry(QtCore.QRect(10, 10, 151, 27))
+        self.LoadStart.setObjectName("pushButton")
+        self.LoadEnd = QtWidgets.QPushButton(self.centralwidget)
+        self.LoadEnd.setGeometry(QtCore.QRect(590, 10, 151, 27))
+        self.LoadEnd.setObjectName("pushButton_2")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(60, 240, 111, 17))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(620, 240, 111, 17))
+        self.label_2.setObjectName("label_2")
+        self.ShowT = QtWidgets.QCheckBox(self.centralwidget)
+        self.ShowT.setGeometry(QtCore.QRect(330, 240, 131, 22))
+        self.ShowT.setObjectName("checkBox")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(20, 280, 62, 17))
+        self.label_3.setObjectName("label_3")
+        self.Slider = QtWidgets.QSlider(self.centralwidget)
+        self.Slider.setGeometry(QtCore.QRect(90, 280, 641, 19))
+        self.Slider.setMaximum(100)
+        self.Slider.setOrientation(QtCore.Qt.Horizontal)
+        self.Slider.setTickPosition(QtWidgets.QSlider.TicksBelow)
+        self.Slider.setTickInterval(10)
+        self.Slider.setObjectName("horizontalSlider")
+        self.Alpha = QtWidgets.QLineEdit(self.centralwidget)
+        self.Alpha.setGeometry(QtCore.QRect(750, 280, 51, 21))
+        self.Alpha.setObjectName("lineEdit")
+        self.graphicsStart = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsStart.setGeometry(QtCore.QRect(10, 40, 256, 192))
+        self.graphicsStart.setObjectName("graphicsView")
+        self.graphicsEnd = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsEnd.setGeometry(QtCore.QRect(530, 40, 256, 192))
+        self.graphicsEnd.setObjectName("graphicsView_2")
+        self.graphicsBlend = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsBlend.setGeometry(QtCore.QRect(280, 310, 256, 192))
+        self.graphicsBlend.setObjectName("graphicsView_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(360, 510, 111, 17))
+        self.label_4.setObjectName("label_4")
+        self.Blend = QtWidgets.QPushButton(self.centralwidget)
+        self.Blend.setGeometry(QtCore.QRect(340, 530, 151, 27))
+        self.Blend.setObjectName("pushButton_3")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(90, 300, 31, 17))
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(710, 300, 31, 17))
+        self.label_6.setObjectName("label_6")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 25))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.LoadStart.setText(_translate("MainWindow", "Load Starting Image ..."))
+        self.LoadEnd.setText(_translate("MainWindow", "Load Ending Image ..."))
+        self.label.setText(_translate("MainWindow", "Starting Image"))
+        self.label_2.setText(_translate("MainWindow", "Ending Image"))
+        self.ShowT.setText(_translate("MainWindow", "Show Triangles"))
+        self.label_3.setText(_translate("MainWindow", "Alpha"))
+        self.label_4.setText(_translate("MainWindow", "Blending Result"))
+        self.Blend.setText(_translate("MainWindow", "Blend"))
+        self.label_5.setText(_translate("MainWindow", "0.0"))
+        self.label_6.setText(_translate("MainWindow", "1.0"))
+
